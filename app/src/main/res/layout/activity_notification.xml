@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_primary_28223b"
+        android:orientation="vertical"
+        tools:context="com.likesby.tradr.Activity.NotificationActivity">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/custom_tool_bar" />
+
+        <include
+            android:id="@+id/progress_bar"
+            layout="@layout/transparent_progress_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15ssp"
+            android:layout_marginVertical="@dimen/_5ssp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/notification"
+            android:id="@+id/heading"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_golden"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/txtClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_marginRight="@dimen/_10ssp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Clear All"
+            android:textColor="@color/dark_golden"
+            android:textSize="@dimen/_17ssp"
+            android:visibility="gone" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rltNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50ssp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/_15ssp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBanner"
+                    android:layout_width="@dimen/_250ssp"
+                    android:layout_height="@dimen/_250ssp"
+                    android:src="@drawable/no_notification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgBanner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-30dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="No data found"
+                    android:textColor="@color/dark_golden" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_15ssp"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_notification" />
+    </LinearLayout>
+</layout>

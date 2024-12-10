@@ -1,0 +1,140 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:orientation="vertical"
+        tools:context=".Fragments.CoursesFragment">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/custom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/dark_golden_2" />
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:layout_marginVertical="@dimen/_5ssp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4ssp">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="@string/courses"
+                        android:textColor="@color/dark_golden"
+                        android:textSize="@dimen/_18ssp" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_8ssp"
+                    app:cardCornerRadius="@dimen/_10ssp">
+
+<!--                    <com.google.android.exoplayer2.ui.PlayerView-->
+<!--                        android:id="@+id/tradr_video"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_200ssp"-->
+<!--                        app:resize_mode="fill" />-->
+
+                    <VideoView
+                        android:id="@+id/tradr_video1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200ssp"
+                        android:visibility="gone" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10ssp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:id="@+id/txt2"
+                    android:text="@string/videos_help_you_to_understand_tradr_strategies"
+                    android:textColor="@color/dark_golden"
+                    android:textSize="@dimen/_15ssp" />
+
+                <FrameLayout
+                    android:id="@+id/bottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400ssp"
+                    android:visibility="visible">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:itemCount="1"
+                        android:layout_marginHorizontal="@dimen/_5ssp"
+                        android:layout_marginVertical="@dimen/_12ssp"
+                        tools:listitem="@layout/item_courses_view" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_350ssp"
+                        android:gravity="center"
+                        android:id="@+id/locked_view"
+                        android:visibility="visible"
+                        android:background="@color/blue_light_804cd6ff">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="@dimen/_90ssp"
+                                android:layout_height="@dimen/_90ssp"
+                                android:src="@drawable/security_ic" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+<!--        </ScrollView>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hello_blank_fragment"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

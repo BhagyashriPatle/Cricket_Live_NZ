@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20ssp"
+    android:orientation="vertical"
+    tools:context=".Fragments.BajAiStrategyFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/main_primary_28223b"
+        app:cardCornerRadius="@dimen/_10ssp"
+        app:cardElevation="@dimen/_7ssp">
+<!--        app:cardBackgroundColor="@color/purple_400"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_corner_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_6ssp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:id="@+id/bajTxt"
+                android:padding="@dimen/_3ssp"
+                android:text="@string/baj_ai_strategy"
+                android:textColor="@color/bright_golden"
+                android:textSize="@dimen/_15ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_150ssp"
+                    android:layout_height="@dimen/_130ssp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/baj_finance" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30ssp"
+                            android:layout_height="@dimen/_30ssp"
+                            android:src="@drawable/outline_note_alt_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_8ssp"
+                            android:fontFamily="@font/inter_regular"
+                            android:text="@string/equity_strategy"
+                            android:textColor="@color/dark_golden_2"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30ssp"
+                            android:layout_height="@dimen/_30ssp"
+                            android:src="@drawable/outline_calendar_month_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_8ssp"
+                            android:fontFamily="@font/inter_regular"
+                            android:text="@string/intraday_work"
+                            android:textColor="@color/dark_golden_2"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30ssp"
+                            android:layout_height="@dimen/_30ssp"
+                            android:src="@drawable/baseline_fitbit_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_8ssp"
+                            android:fontFamily="@font/inter_regular"
+                            android:text="@string/_9_14_per_month_expectations"
+                            android:textColor="@color/dark_golden_2"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginVertical="@dimen/_10ssp"
+                android:text="A strategy dedicated only for trading Bajaj Finance stock, utilising it’s rising and falling movements."
+                android:textColor="@color/bright_golden"
+                android:textSize="@dimen/_12ssp" />
+
+            <FrameLayout
+                android:id="@+id/frmPlayview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165ssp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_10ssp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/mediaRlt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/video_thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true" />
+
+                        <ImageView
+                            android:id="@+id/video_overlay"
+                            android:layout_width="@dimen/_40ssp"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_8ssp"
+                            android:src="@drawable/play" />
+                    </RelativeLayout>
+
+<!--                    <com.google.android.exoplayer2.ui.PlayerView-->
+<!--                        android:id="@+id/baj_ai_video"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:visibility="gone"-->
+<!--                        app:resize_mode="fill" />-->
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+            <!--            <com.google.android.material.card.MaterialCardView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginHorizontal="@dimen/_8ssp"-->
+            <!--                app:cardCornerRadius="@dimen/_10ssp">-->
+
+            <!--                <com.google.android.exoplayer2.ui.PlayerView-->
+            <!--                    android:id="@+id/baj_ai_video"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="@dimen/_200ssp"-->
+            <!--                    app:resize_mode="fill" />-->
+
+            <!--            </com.google.android.material.card.MaterialCardView>-->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

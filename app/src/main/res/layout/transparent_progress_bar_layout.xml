@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:background="#60000000"
+    android:elevation="@dimen/_50ssp"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <FrameLayout
+        android:id="@+id/progress_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_gravity="center"
+                android:background="@drawable/white_btn_gradient"
+                android:indeterminateTint="@color/purple_700"
+                android:padding="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12ssp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:text="Please Wait"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="sans"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

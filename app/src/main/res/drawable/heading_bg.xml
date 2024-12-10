@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--        <gradient-->
+<!--            android:endColor="#6a417d"-->
+<!--            android:centerColor="#1b1a2f"-->
+<!--            android:startColor="#1b1a2f" />-->
+<!--        <gradient-->
+<!--            android:endColor="#a659c2"-->
+<!--            android:centerColor="#530d70"-->
+<!--            android:startColor="#11033b" />-->
+<!--        <gradient-->
+<!--                    android:endColor="#5a388e"-->
+<!--                    android:startColor="#64105c" />-->
+        <gradient
+            android:startColor="@color/main_primary_28223b"
+            android:endColor="#5B3596"
+            android:centerColor="#5B3596"/>
+<!--        <gradient-->
+<!--            android:endColor="@color/bottom_dark_black_1e1818"-->
+<!--            android:startColor="@color/teal_600_5a388e" />-->
+<!--        <gradient-->
+<!--            android:endColor="@color/bottom_dark_black_1e1818"-->
+<!--            android:startColor="#64105c" />-->
+<!--        <gradient-->
+<!--            android:endColor="#013392"-->
+<!--            android:startColor="#1b2c22"-->
+<!--            android:type="linear" />-->
+<!--    <gradient-->
+<!--        android:startColor="#ff7000e0"-->
+<!--        android:endColor="#ff400080"-->
+<!--        android:angle="270" />-->
+    <!--    <solid android:color="@color/purple_600"/>-->
+<!--    <gradient-->
+<!--        android:endColor="#7E4E91"-->
+<!--        android:centerColor="#1D3347"-->
+<!--        android:startColor="#1D3347"-->
+<!--        android:type="radial" />-->
+<!--    <gradient-->
+<!--        android:endColor="#acc0fe"-->
+<!--        android:startColor="#4b086d"-->
+<!--        android:type="linear" />-->
+<!--        <gradient-->
+<!--            android:endColor="@color/bottom_dark_black_1e1818"-->
+<!--            android:startColor="@color/purple_600"-->
+<!--            android:type="linear" />-->
+    <!--    <gradient-->
+    <!--        android:angle="0"-->
+    <!--        android:startColor="#47415A"-->
+    <!--        android:type="linear"-->
+    <!--        android:endColor="#BABABA" />-->
+</shape>

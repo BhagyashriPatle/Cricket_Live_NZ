@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_primary_28223b">
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="@dimen/_80ssp">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/main_primary_28223b"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_7ssp"
+                android:fontFamily="@font/inter_extrabold"
+                android:gravity="center"
+                android:text="Account Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlebar"
+            android:layout_marginBottom="@dimen/_80ssp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titlebar">
+
+                <RelativeLayout
+                    android:id="@+id/shop_icon_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10ssp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/user_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_logo"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center_horizontal"
+                        android:text="User Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <View
+                        android:id="@+id/divider_one"
+                        android:layout_width="@dimen/_250ssp"
+                        android:layout_height="1.5dp"
+                        android:layout_below="@id/user_name"
+                        android:layout_centerInParent="true"
+                        android:layout_marginVertical="@dimen/_5ssp"
+                        android:background="@color/main_primary_28223b" />
+
+                </RelativeLayout>
+                <include
+                    android:id="@+id/nav_menu"
+                    layout="@layout/side_navigation_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_icon_parent" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <!--    </ScrollView>-->
+
+</layout>

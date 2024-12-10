@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/logout_selected" android:state_checked="true" />
+    <item android:drawable="@color/main_primary_28223b" android:state_selected="false" />
+
+    <!--        <item android:drawable="@color/_263049"-->
+    <!--            android:state_pressed="false" />-->
+    <item android:drawable="@color/Transparent4" />
+</selector>

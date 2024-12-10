@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
+        tools:context="com.likesby.tradr.Activity.OtpActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/_24ssp"-->
+            <!--                android:layout_height="@dimen/_24ssp"-->
+            <!--                android:src="@drawable/asset_26" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Otp Verification"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <include
+            android:id="@+id/progress_bar"
+            layout="@layout/transparent_progress_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tool_bar"
+            android:background="@drawable/asset_6">
+            <ImageView
+                android:id="@+id/txtNoDataImage"
+                android:layout_width="@dimen/_170ssp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/_200ssp"
+                android:src="@drawable/asset_11" />
+            <RelativeLayout
+                android:id="@+id/relayOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/enterOtpTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/btn_continue"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="@string/enter_otp_txt"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enterOtpTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12ssp"
+                    android:layout_marginBottom="@dimen/_20ssp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/otp1"
+                        android:layout_width="@dimen/_50ssp"
+                        android:layout_height="@dimen/_50ssp"
+                        android:layout_marginEnd="@dimen/_20ssp"
+                        android:background="@drawable/edittext_otp"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:padding="@dimen/_10ssp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/otp2"
+                        android:layout_width="@dimen/_50ssp"
+                        android:layout_height="@dimen/_50ssp"
+                        android:layout_marginEnd="@dimen/_20ssp"
+                        android:background="@drawable/edittext_otp"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:padding="@dimen/_10ssp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/otp3"
+                        android:layout_width="@dimen/_50ssp"
+                        android:layout_height="@dimen/_50ssp"
+                        android:layout_marginEnd="@dimen/_20ssp"
+                        android:background="@drawable/edittext_otp"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:padding="@dimen/_10ssp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/otp4"
+                        android:layout_width="@dimen/_50ssp"
+                        android:layout_height="@dimen/_50ssp"
+                        android:layout_marginEnd="@dimen/_20ssp"
+                        android:background="@drawable/edittext_otp"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:padding="@dimen/_10ssp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_below="@+id/llOtp"
+                    android:layout_gravity="center"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_marginHorizontal="@dimen/_25ssp"
+                    android:background="@drawable/logout_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/txt_continue"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/resendOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_continue"
+                    android:layout_alignEnd="@id/btn_continue"
+                    android:layout_marginTop="@dimen/_16ssp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="@dimen/_12ssp"
+                    android:text="@string/resend_code"
+                    android:textColor="@color/dark_golden_2"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

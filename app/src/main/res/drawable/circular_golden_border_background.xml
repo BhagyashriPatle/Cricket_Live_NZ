@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+<!--    <solid android:color="@color/light_gray"/>-->
+    <size
+        android:width="@dimen/_45ssp"
+        android:height="@dimen/_45ssp" />
+    <stroke
+        android:width="@dimen/_1ssp"
+        android:color="@color/dark_golden_2" />
+</shape>
+    <!--<?xml version="1.0" encoding="utf-8"? android:color="#9691A5">-->
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+    <!--    <item><layer-list>-->
+    <!--        <item ><shape android:shape="oval">-->
+    <!--            <gradient android:angle="270" android:endColor="#47415A" android:startColor="#BABABA" />-->
+    <!--            &lt;!&ndash;            <stroke android:width="3dp" android:color="#BABABA" />&ndash;&gt;-->
+    <!--            <size-->
+    <!--                android:width="@dimen/_45ssp"-->
+    <!--                android:height="@dimen/_45ssp" />-->
+    <!--            <stroke-->
+    <!--                android:width="@dimen/_1ssp"-->
+    <!--                android:color="#47415A" />-->
+    <!--        </shape></item>-->
+    <!--    </layer-list></item>-->
+    <!--</selector>-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:shape="oval">-->
+    <!--    <size-->
+    <!--        android:width="@dimen/_45ssp"-->
+    <!--        android:height="@dimen/_45ssp" />-->
+    <!--    <stroke-->
+    <!--        android:width="@dimen/_1ssp"-->
+    <!--        android:color="#47415A" />-->
+    <!--</shape>-->

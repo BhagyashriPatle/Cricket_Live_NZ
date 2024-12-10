@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_primary_28223b"
+        android:orientation="vertical"
+        tools:context="com.likesby.tradr.Activity.ProfileViews.HelpAndSupportActivity">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/custom_tool_bar" />
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10ssp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/help_and_support"
+            android:padding="@dimen/_5ssp"
+            android:textColor="@color/dark_golden"
+            android:textSize="@dimen/_20ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50ssp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170ssp"
+                android:layout_weight="1"
+                android:src="@drawable/help_support_call"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:shadowRadius="5"
+                android:translationZ="@dimen/_10ssp"
+                app:cardCornerRadius="@dimen/_10ssp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selected_tab_strategy"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_170ssp"
+                        android:layout_weight="1"
+                        android:src="@drawable/help_support_call" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="-10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_10ssp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Have any queries?"
+                            android:fontFamily="@font/inter_semibold"
+                            android:textSize="@dimen/_17ssp"
+                            android:textColor="@color/dark_golden_1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_semibold"
+                            android:textSize="@dimen/_16ssp"
+                            android:text="Contact us and we will always there to help"
+                            android:textColor="@color/dark_golden_2" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/_10ssp"
+            android:layout_marginVertical="@dimen/_18ssp"
+            android:padding="@dimen/_30ssp"
+            android:background="@drawable/help_support_drawable">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12ssp"
+                android:background="@drawable/selected">
+                <ImageView
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/ic_home_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:text="Address"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:text="3rdFloor, RaniKothibuilding, oppositeSamsungServiceCentre,
+                          ByramjiTown, Nagpur, Maharashtra 440013"
+                android:layout_marginVertical="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/dark_golden_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:background="@drawable/help_support_drawable"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12ssp"
+                android:background="@drawable/selected">
+                <ImageView
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/ic_call_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:text="Contact"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8412079872, 8999517289"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:layout_marginVertical="@dimen/_5ssp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/dark_golden_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:background="@drawable/help_support_drawable"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12ssp"
+                android:background="@drawable/selected">
+                <ImageView
+                    android:layout_width="@dimen/_20ssp"
+                    android:layout_height="@dimen/_20ssp"
+                    android:src="@drawable/ic_email_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:text="E–mail"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tradrofficial@gmail.com"
+                android:layout_marginVertical="@dimen/_5ssp"
+                android:layout_marginHorizontal="@dimen/_10ssp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/dark_golden_2" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

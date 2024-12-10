@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.likesby.tradr.Activity.WelcomeActivity">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_above="@+id/btnNext"
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:gravity="center"
+            android:orientation="horizontal">
+<!--            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator-->
+<!--                android:id="@+id/dots_indicator"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:dotsCornerRadius="8dp"-->
+<!--                app:dotsSize="@dimen/_8ssp"-->
+<!--                app:dotsSpacing="@dimen/_4ssp"-->
+<!--                app:dotsWidthFactor="2.6"-->
+<!--                app:dotsColor="@color/bright_golden"-->
+<!--                app:ci_drawable="@drawable/golden_selected_dot_bg"-->
+<!--                app:ci_drawable_unselected="@drawable/unselected_grey_dot_bg" />-->
+        </LinearLayout>
+<!--//            android:background="@drawable/corner_box_filled_white"-->
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/purble_button_bg"
+            android:text="Next >"
+            android:layout_marginHorizontal="@dimen/_30ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginBottom="@dimen/_80ssp"
+            android:textColor="@color/white" />
+<!--        android:background="@drawable/corner_box_filled_white"-->
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="primary_pink">#00dec5</color>-->
+    <!--    <color name="light_pink">#00dec5</color>-->
+    <color name="primary_pink">#00FFFF</color>
+    <!--    <color name="primary_pink">#FF5F76</color>-->
+    <color name="light_pink">#00FFFF</color>
+    <!--    <color name="light_pink">#F78BA7</color>-->
+    <color name="curvy_black">#273036</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="bold_text_color">#78008a</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#F4F0E0</color>
+    <!--    <color name="colorPrimary">#390055</color>-->
+    <!--    <color name="colorPrimary">#180123</color>-->
+    <color name="colorPrimary">#28223B</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#828281</color>
+    <!--    <color name="yellow">#ffc13f </color>-->
+    <color name="yellow">#daa520</color>
+    <color name="light_gray">#ededed</color>
+    <color name="light_gray_font">#dadbd9</color>
+    <color name="btn_green">#2DB32C</color>
+    <color name="dark_gray">#807f7e</color>
+    <color name="green_selector">#00B5B8</color>
+    <color name="Transparent4">#00000000</color>
+    <color name="_673ab7">#673AB7</color>
+    <color name="dark_pink_red_shade">#ff4f6c</color>
+    <color name="silver">#D5DAE0</color>
+    <color name="purple">#673AB7</color>
+    <color name="_263049">#263049</color>
+    <color name="_e2cfe2">#e2cfe2</color>
+    <!--    //new -->
+    <color name="main_primary_28223b">#04041D</color>
+    <color name="dark_golden">#FFDD43</color>
+    <!--    <color name="dark_golden">#A28532</color>-->
+    <color name="bright_golden">#e6dc7d</color>
+    <!--    <color name="bright_golden">#FFDD43</color>-->
+    <!--    <color name="bright_golden">#F4EE8F</color>-->
+    <color name="dark_golden_1">#a28331</color>
+    <color name="dark_golden_2">#e6dc7d</color>
+    <color name="dark_golden_3">#a18532</color>
+    <!--    <color name="main_primary_28223b">#28223B</color>-->
+    <!--    <color name="purple_gray">#47415A</color>-->
+    <color name="purple_gray">#e6dc7d</color>
+    <color name="purple_300">#443871</color>
+    <color name="purple_400">#362E4F</color>
+    <color name="purple_600">#522B6A</color>
+    <color name="blue_8008c3fa">#8008c3fa</color>
+    <color name="purple_c192fb">#C192FB</color>
+    <!--    <color name="secondary_362e4f">#362E4F</color>-->
+    <color name="dark_black_47415a">#47415A</color>
+    <color name="royal_blue_3e91ff">#3e91ff</color>
+    <color name="blue_light_804cd6ff">#804CD6FF</color>
+    <color name="blue_semidark_8004485c">#8004485C</color>
+    <!--    <color name="purple_dark_362e4f">#362E4F</color>-->
+    <color name="light_purple_fab_baa0ea">#BAA0EA</color>
+    <color name="bottom_dark_black_1e1818">#1E1818</color>
+    <color name="chat_purple_8778c7">#8778c7</color>
+    <color name="chat_blue_804cd6ff">#804CD6FF</color>
+    <color name="navy_blue_374067">#374067</color>
+    <color name="blue_200_6877fc">#6877FC</color>
+    <color name="purple_100_773db5">#773DB5</color>
+    <color name="p_522b6a">#522B6A</color>
+    <color name="teal_600_5a388e">#5a388e</color>
+    <color name="blue_100_48c9b0">#48C9B0</color>
+    <color name="yellow_f4d03f">#F4D03F</color>
+    <color name="light_red_d98880">#D98880</color>
+    <color name="main_light_231548">#231548</color>
+    <color name="main_light_black_222223">#222223</color>
+    <color name="main_purple_4f337a">#4F337A</color>
+</resources>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+<!--    <color name="purple_200">#FFBB86FC</color>-->
+<!--    <color name="purple_500">#FF6200EE</color>-->
+<!--    <color name="purple_700">#FF3700B3</color>-->
+<!--    <color name="teal_200">#FF03DAC5</color>-->
+<!--    <color name="teal_700">#FF018786</color>-->
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    -->
+<!--</resources>-->

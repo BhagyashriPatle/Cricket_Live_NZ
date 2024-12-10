@@ -1,0 +1,20 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="1"
+        android:layout_marginHorizontal="@dimen/_5ssp"
+        android:layout_marginVertical="@dimen/_12ssp"
+        tools:listitem="@layout/item_qna" />
+
+    </RelativeLayout>
+
+</layout>

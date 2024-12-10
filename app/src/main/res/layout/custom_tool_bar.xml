@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_7ssp"
+            android:src="@drawable/asset_26" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/logotradr_new" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1ssp"
+        android:background="@color/dark_golden_2" />
+</LinearLayout>

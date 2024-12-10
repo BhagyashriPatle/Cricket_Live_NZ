@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading_bg"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/heading_bg"
+            android:elevation="@dimen/_10ssp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_4ssp"
+                android:gravity="center">
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_45ssp"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:background="@drawable/circular_golden_border_background"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    >
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="@dimen/_25ssp"
+                        android:layout_height="@dimen/_25ssp"
+                        android:layout_centerInParent="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_2ssp"
+                        android:src="@drawable/bell" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/drawer_layout"
+                    android:layout_width="@dimen/_24ssp"
+                    android:layout_height="@dimen/_24ssp"
+                    android:layout_marginStart="@dimen/_5ssp"
+                    android:layout_weight="0.3"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_3ssp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_32ssp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo"/>
+<!--                android:src="@drawable/logotradr_new"-->
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_5ssp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_35ssp"
+                        android:layout_height="@dimen/_32ssp"
+                        android:background="@drawable/ic_notifications"
+                        android:backgroundTint="#FFC107" />
+
+                    <TextView
+                        android:id="@+id/readCount"
+                        android:layout_width="@dimen/_15ssp"
+                        android:layout_height="@dimen/_15ssp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_2ssp"
+                        android:background="@drawable/red_rounded_corners"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        tools:text="0"
+                        tools:visibility="visible" />
+                </FrameLayout>
+
+                <ImageView
+
+                    android:layout_width="@dimen/_37ssp"
+                    android:layout_height="@dimen/_52ssp"
+                    android:layout_marginEnd="@dimen/_4ssp"
+                    android:layout_weight="0.3"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_7ssp"
+                    android:src="@drawable/person"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/_45ssp"
+                    android:layout_height="@dimen/_45ssp"
+                    android:layout_marginEnd="@dimen/_10ssp"
+                    android:background="@drawable/circular_golden_border_background"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_25ssp"
+                        android:layout_height="@dimen/_25ssp"
+                        android:layout_centerInParent="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/person" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_37ssp"
+                    android:layout_height="@dimen/_52ssp"
+                    android:layout_marginEnd="@dimen/_4ssp"
+                    android:layout_weight="0.3"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_7ssp"
+                    android:src="@drawable/asset_25"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1ssp"
+            android:background="@color/dark_golden_2" />
+    </LinearLayout>
+</layout>

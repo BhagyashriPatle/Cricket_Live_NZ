@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="@dimen/_40ssp"
+        android:layout_height="@dimen/_40ssp" />
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/tab_icon"-->
+<!--        android:layout_width="@dimen/_55ssp"-->
+<!--        android:layout_height="@dimen/_55ssp" />-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/tab_icon"-->
+<!--            android:layout_width="@dimen/_65ssp"-->
+<!--            android:layout_height="@dimen/_65ssp"-->
+<!--            android:shadowColor="@color/colorAccent"-->
+<!--            android:shadowDx="0"-->
+<!--            android:shadowDy="0"-->
+<!--            android:shadowRadius="50"-->
+<!--            app:civ_border_color="@color/white"-->
+<!--            app:civ_border_width="@dimen/_3ssp" />-->
+
+</LinearLayout>
